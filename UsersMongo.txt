@@ -1,0 +1,11 @@
+{
+	_id: POST_ID,
+	Pseudo: USER_PSEUDO,
+	Password: USER_PASSWORD,
+	Sex: USER_SEX
+	CreatedAt: USER_CREATION_DATE,
+	UpdatedAt: USER_UPDATED_DATE,
+	Email: USER_EMAIL,
+	AvatarUrl: USER_AVATAR,
+	Voted: WHERE_USER_VOTED
+}

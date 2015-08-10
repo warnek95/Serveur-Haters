@@ -1,0 +1,47 @@
+<div ng-app="MainModule" ng-controller="UserCtrl">
+  <span></span>
+  <form ng-submit="submit()">
+    <input ng-model="user.username" type="text" name="user" placeholder="Username" />
+    <input ng-model="user.password" type="password" name="pass" placeholder="Password" />
+    <input type="submit" value="Login" />
+  </form>
+  <button ng-click="pp()">
+  	ff
+  </button>
+</div>
+<div class="results"></div>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function (e)
+{
+//$.getJSON('https://www.sportintown.com/e/2eme.edition.des.jeux.omnisports.inter.ecoles?callback=?', retourSite)
+$.ajax({
+url:'https://www.sportintown.com/e/2eme.edition.des.jeux.omnisports.inter.ecoles',
+dataType : 'jsonp',
+jsonp : 'AutreNom',
+jsonpCallback : 'base'
+
+})
+})
+function retourSite (arg) {
+var div = arg.getElementsByTagName('.event_infos')
+alert(div)
+//console.log(arg)
+
+}
+function base (arg) {
+
+$('.results').html('dffdfd');
+}
+// $(document).ready(function (e)
+// {
+// $.get(
+//     'http://www.corsproxy.com/' +
+//     'sportintown.com/e/2eme.edition.des.jeux.omnisports.inter.ecoles',
+//     function (response) {
+//     	console.log("fddf");
+//         console.log("> ", response);
+//         $("#viewer").html(response);
+// });
+// })
+</script> 

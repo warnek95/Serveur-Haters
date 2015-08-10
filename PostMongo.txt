@@ -1,0 +1,36 @@
+{
+	_id: POST_ID,
+	Text: POST_TEXT,
+	By: { 
+		UserPseudo: POST_USER_PSEUDO, 
+		UserAvatarUrl: USER_AVATAR_URL
+	},
+	Tags: [TAG1, TAG2, TAG3],
+	Report: TOTAL_REPORTS,
+	Pictures: [LINK1, LINK2, LINK3],
+	CreatedAt: POST_CREATION_DATE,
+	UpdatedAt: POST_UPDATED_DATE,
+	Comments: [
+		{
+			User: { 
+				COMMENT_USER_PSEUDO, 
+				COMMENT_USER_AVATAR
+			},
+			Text: TEXT,
+			CreatedAt: DATE_TIME,
+			Report: TOTAL_REPORTS
+,		},
+		{
+			User: { 
+				COMMENT_USER_PSEUDO, 
+				COMMENT_USER_AVATAR
+			},
+			Text: TEXT,
+			CreatedAt: DATE_TIME,
+			Report: TOTAL_REPORTS,
+		}
+	]
+}
+
+tags  list of tags no limit
+pictures list of pictures no limit
